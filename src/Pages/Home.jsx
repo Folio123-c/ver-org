@@ -17,6 +17,7 @@ import ProjectCategory from "../components/ProjectCategory"
 import Partners from "../components/Partners"
 import ProjectDetail from "./ProjectDetails"
 import { IoArrowBackCircleSharp } from "react-icons/io5"
+import img from "../assets/images/IMG-20221114-WA0005.jpg"
 // ..
 AOS.init();
 const Home = (() => {
@@ -127,9 +128,9 @@ const Home = (() => {
             <div className="container">
               <div className="row">
                 <div className="col-12">
-                  <div className="s-video-wrap" style={{ backgroundImage: 'url(../assets/img/bg/video-img2.png)' }}>
+                  <div className="s-video-wrap" style={{ backgroundImage: `url(${img})` }}>
                     <div className="s-video-content text-center">
-                      <h6><a href="https://www.youtube.com/watch?v=aGg_eRkbaAc" target="blank" className="popup-video mb-50"><img src="../assets/img/bg/play-button2.png" alt="circle_right" /></a></h6>
+                      <h6><a href="https://www.youtube.com/watch?v=aGg_eRkbaAc" target="blank" className="popup-video mb-50"><img src={"../assets/img/bg/play-button2.png"} alt="circle_right" /></a></h6>
                     </div>
                   </div>
                 </div>
