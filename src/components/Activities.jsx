@@ -3,29 +3,25 @@ import { ActivitiesData } from "../assets/Data/Activities"
 import { Avatar, Card, Skeleton, Switch } from 'antd';
 import { Base_url } from "../Services/Constants";
 import DOMPurify from "dompurify";
+import { createDirectus, readItems, rest } from "@directus/sdk";
 const { Meta } = Card;
 const Activities = () => {
     const [achievementsData, setAchievementData] = useState(null);
   const [isFetching, setIsFetching] = useState(true);
   
   async function fetchData() {
-    try {
-      setIsFetching(true)
-      const response = await fetch('/api/items/achivements?fields=*.*');
-      console.log("responses",response)
-      if (!response.ok) {
-        setIsFetching(false)
-        throw new Error('Network response was not ok');
-      }else{
-        setIsFetching(false)
-        const data = await response.json();
-        console.log(data, "data");
-        return data.data; 
-      }
-    } catch (error) {
-      console.error("Error fetching data:", error);
-      return null;
+    const client = createDirectus(Base_url).with(rest());
+  
+    const result = await client.request(
+      readItems('achivements', {
+        fields: ['*.*'],
+      })
+    );
+    if(result){
+      setIsFetching(false);
     }
+    console.log("result",result)
+        return result;
   }
 
   useEffect(() => {

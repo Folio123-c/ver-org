@@ -159,8 +159,14 @@ const Home = (() => {
       </div>
     </div> {/* Ends links to tutorial */}
   </div>
+  
 </section>
+<div className="bg-[#fdcd0d1a] h-32">
 
+<div className="second-header-btn float-right mr-10">
+                          <Link to={"/gallery"} className="btn">View More</Link>
+                        </div>
+</div>
           {/* blog-area-end */}
           {/* brand-area */}
 
