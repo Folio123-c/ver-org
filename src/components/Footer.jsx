@@ -38,7 +38,6 @@ const Footer =()=>{
   const getCurrentYear = () => {
     return new Date().getFullYear();
   };
-  console.log("getCurrentYeargetCurrentYear",getCurrentYear)
     return(
         <>
         

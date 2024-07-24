@@ -16,7 +16,7 @@ const OurSteps=()=>{
                   <div className="pl-60">
                     <div className="section-title mb-50 wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s">
                       {/* <h5>Our Steps</h5> */}
-                      <h2>Operational spaces</h2>
+                      <h2 className="capitalize">Operational spaces</h2>
                     </div>
                     <ul>
                       <li>
@@ -26,7 +26,7 @@ const OurSteps=()=>{
                           </div>
                           <div className="text">
                             <h3>soil erosion</h3>
-                            <p>Special wedding garments are often worn, and the ceremony is sttimes followed by a wedding reception. Music, poetry, prayers, or readings.</p>
+                            <p className="">Minimizing the impact of water or wind forces is the main objective for erosion control.</p>
                           </div>
                         </div>
                       </li>
@@ -37,7 +37,7 @@ const OurSteps=()=>{
                           </div>
                           <div className="text">
                             <h3>destruction of agricultural land and deforestation</h3>
-                            <p>Special wedding garments are often worn, and the ceremony is sttimes followed by a wedding reception. Music, poetry, prayers, or readings.</p>
+                            <p>Deforestation contributes to climate change by increasing carbon dioxide levels in the atmosphere, as trees that once absorbed CO2 are removed. It also results in habitat destruction, threatening the survival of numerous plant and animal species. </p>
                           </div>
                         </div>
                       </li>
@@ -48,7 +48,7 @@ const OurSteps=()=>{
                           </div>
                           <div className="text">
                             <h3>forest management</h3>
-                            <p>Special wedding garments are often worn, and the ceremony is sttimes followed by a wedding reception. Music, poetry, prayers, or readings.</p>
+                            <p>It often involves evaluating the soil, trees and vegetation within a forest ecosystem and performing a variety of complex tasks to improve land management practices</p>
                           </div>
                         </div>
                       </li>

@@ -4,29 +4,26 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { Base_url } from "../Services/Constants";
 import { Card, Avatar } from "antd";
+import { createDirectus, readItems, rest } from "@directus/sdk";
 const Gallery = () => {
   const [isFetching, setIsFetching] = useState(true);
   const [galleryData, setGalleryData] = useState(null);
   const [showAllPhotos, setShowAllPhotos] = useState(false);
   const { Meta } = Card;
   async function fetchData() {
-    try {
-      setIsFetching(true);
-      const response = await fetch("/api/items/gallery?fields=*.*");
-      console.log("responses", response);
-      if (!response.ok) {
-        setIsFetching(false);
-        throw new Error("Network response was not ok");
-      } else {
-        setIsFetching(false);
-        const data = await response.json();
-        console.log(data, "data");
-        return data.data;
-      }
-    } catch (error) {
-      console.error("Error fetching data:", error);
-      return null;
+   
+    const client = createDirectus(Base_url).with(rest());
+  
+    const result = await client.request(
+      readItems('gallery', {
+        fields: ['*.*'],
+      })
+    );
+    if(result){
+      setIsFetching(false);
     }
+    console.log("result",result)
+        return result;
   }
 
   useEffect(() => {

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Base_url } from "../Services/Constants";
 import DOMPurify from "dompurify";
+import { createDirectus, readItems, rest } from "@directus/sdk";
 
 const ProjectCategory=(props)=>{
     const [projectData, setProjectsData] = useState(null);
@@ -12,42 +13,38 @@ const ProjectCategory=(props)=>{
     const [isFetching, setIsFetching] = useState(true);
     const [projectCategory, setProjectCategory] = useState("all")
     async function fetchData() {
-      try {
-        setIsFetching(true)
-        const response = await fetch('/api/items/projects?fields=*.*');
-        console.log("responses",response)
-        if (!response.ok) {
-          setIsFetching(false)
-          throw new Error('Network response was not ok');
-        }else{
-          setIsFetching(false)
-          const data = await response.json();
-          console.log(data, "data");
-          return data.data; 
-        }
-      } catch (error) {
-        console.error("Error fetching data:", error);
-        return null;
-      }
+      const client = createDirectus(Base_url).with(rest());
+  
+  const result = await client.request(
+    readItems('projects', {
+      fields: ['*.*'],
+    })
+  );
+  if(result){
+    setIsFetching(false);
+  }
+  console.log("result",result)
+      return result;
     }
+    // fields: ['*', { author: ['*'] }],
     async function fetchAgricultureData() {
-      try {
-        setIsFetching(true)
-        const response = await fetch('/api/items/projects?filter={ "category": { "_eq": "1" }}');
-        console.log("responses",response)
-        if (!response.ok) {
-          setIsFetching(false)
-          throw new Error('Network response was not ok');
-        }else{
-          setIsFetching(false)
-          const data = await response.json();
-          console.log(data, "data");
-          return data.data; 
-        }
-      } catch (error) {
-        console.error("Error fetching data:", error);
-        return null;
+       
+      const client = createDirectus(Base_url).with(rest());
+  
+      const result = await client.request(
+        readItems('projects', {
+          filter: {
+            category: {
+              _eq: 1
+            }
+          },
+        })
+      );
+      if(result){
+        setIsFetching(false);
       }
+      console.log("result",result)
+          return result;
     }
   
     useEffect(() => {
@@ -56,23 +53,22 @@ const ProjectCategory=(props)=>{
       });
     }, []);
     async function fetchErosionData() {
-      try {
-        setIsFetching(true)
-        const response = await fetch('/api/items/projects?filter={ "category": { "_eq": "3" }}');
-        console.log("responses",response)
-        if (!response.ok) {
-          setIsFetching(false)
-          throw new Error('Network response was not ok');
-        }else{
-          setIsFetching(false)
-          const data = await response.json();
-          console.log(data, "data");
-          return data.data; 
-        }
-      } catch (error) {
-        console.error("Error fetching data:", error);
-        return null;
+      const client = createDirectus(Base_url).with(rest());
+  
+      const result = await client.request(
+        readItems('projects', {
+          filter: {
+            category: {
+              _eq: 3
+            }
+          },
+        })
+      );
+      if(result){
+        setIsFetching(false);
       }
+      console.log("result",result)
+          return result;
     }
   
     useEffect(() => {
@@ -81,23 +77,22 @@ const ProjectCategory=(props)=>{
       });
     }, []);
     async function fetchEnvironmentData() {
-      try {
-        setIsFetching(true)
-        const response = await fetch('/api/items/projects?filter={ "category": { "_eq": "2" }}');
-        console.log("responses",response)
-        if (!response.ok) {
-          setIsFetching(false)
-          throw new Error('Network response was not ok');
-        }else{
-          setIsFetching(false)
-          const data = await response.json();
-          console.log(data, "data");
-          return data.data; 
-        }
-      } catch (error) {
-        console.error("Error fetching data:", error);
-        return null;
+      const client = createDirectus(Base_url).with(rest());
+  
+      const result = await client.request(
+        readItems('projects', {
+          filter: {
+            category: {
+              _eq: 2
+            }
+          },
+        })
+      );
+      if(result){
+        setIsFetching(false);
       }
+      console.log("result",result)
+          return result;
     }
   
     useEffect(() => {
@@ -106,23 +101,22 @@ const ProjectCategory=(props)=>{
       });
     }, []);
     async function fetchForestData() {
-      try {
-        setIsFetching(true)
-        const response = await fetch('/api/items/projects?filter={ "category": { "_eq": "4" }}');
-        console.log("responses",response)
-        if (!response.ok) {
-          setIsFetching(false)
-          throw new Error('Network response was not ok');
-        }else{
-          setIsFetching(false)
-          const data = await response.json();
-          console.log(data, "data");
-          return data.data; 
-        }
-      } catch (error) {
-        console.error("Error fetching data:", error);
-        return null;
+      const client = createDirectus(Base_url).with(rest());
+  
+      const result = await client.request(
+        readItems('projects', {
+          filter: {
+            category: {
+              _eq: 4
+            }
+          },
+        })
+      );
+      if(result){
+        setIsFetching(false);
       }
+      console.log("forest",result)
+          return result;
     }
   
     useEffect(() => {

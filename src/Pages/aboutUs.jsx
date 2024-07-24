@@ -8,27 +8,25 @@ import aboutImage from "../assets/images/IMG-20221114-WA0005.jpg"
 import aboutImageBg from "../assets/images/IMG-20221114-WA0010.jpg"
 import { Carousel } from 'antd';
 import "./style.css"
+import { createDirectus, readItems, rest } from "@directus/sdk";
+import { Base_url } from "../Services/Constants";
 const AboutUs = () => {
   const [testimonialData, setTestimonialData] = useState(null);
   const [isFetcing, setIsFetching] = useState(false);
   async function fetchData() {
-    try {
-      setIsFetching(true);
-      const response = await fetch("/api/items/testimonial?fields=*.*");
-      console.log("responses", response);
-      if (!response.ok) {
-        setIsFetching(false);
-        throw new Error("Network response was not ok");
-      } else {
-        setIsFetching(false);
-        const data = await response.json();
-        console.log(data, "data");
-        return data.data;
-      }
-    } catch (error) {
-      console.error("Error fetching data:", error);
-      return null;
+    
+    const client = createDirectus(Base_url).with(rest());
+  
+    const result = await client.request(
+      readItems('testimonial', {
+        fields: ['*.*'],
+      })
+    );
+    if(result){
+      setIsFetching(false);
     }
+    console.log("result",result)
+        return result;
   }
 
   useEffect(() => {

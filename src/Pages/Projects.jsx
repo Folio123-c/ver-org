@@ -9,6 +9,7 @@ import { IoArrowBackCircleSharp } from "react-icons/io5";
 import Partners from "../components/Partners";
 import DOMPurify from "dompurify";
 import aboutImageBg from "../assets/images/IMG-20221114-WA0010.jpg"
+import { createDirectus, readItems, rest } from "@directus/sdk";
 const { Meta } = Card;
 const Projects = () => {
   const [projectData, setProjectsData] = useState(null);
@@ -21,26 +22,39 @@ const Projects = () => {
     setDetailedData(data)
     setProjectsDetails(true);
   };
+  // async function fetchData() {
+  //   try {
+  //     setIsFetching(true);
+  //     const response = await fetch("api/items/projects?fields=*.*");
+  //     console.log("responses", response);
+  //     if (!response.ok) {
+  //       setIsFetching(false);
+  //       throw new Error("Network response was not ok");
+  //     } else {
+  //       setIsFetching(false);
+  //       const data = await response.json();
+  //       console.log(data, "data");
+  //       return data.data;
+  //     }
+  //   } catch (error) {
+  //     console.error("Error fetching data:", error);
+  //     return null;
+  //   }
+  // }
   async function fetchData() {
-    try {
-      setIsFetching(true);
-      const response = await fetch("/api/items/projects?fields=*.*");
-      console.log("responses", response);
-      if (!response.ok) {
-        setIsFetching(false);
-        throw new Error("Network response was not ok");
-      } else {
-        setIsFetching(false);
-        const data = await response.json();
-        console.log(data, "data");
-        return data.data;
-      }
-    } catch (error) {
-      console.error("Error fetching data:", error);
-      return null;
-    }
-  }
+    const client = createDirectus(Base_url).with(rest());
 
+const result = await client.request(
+	readItems('projects', {
+		fields: ['*.*'],
+	})
+);
+if(result){
+  setIsFetching(false);
+}
+console.log("result",result)
+    return result;
+  }
   useEffect(() => {
     fetchData().then((data) => {
       setProjectsData(data);

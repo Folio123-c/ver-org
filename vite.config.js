@@ -10,6 +10,7 @@ export default defineConfig({
         target: 'https://admin.verrwanda.org',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ''),
+
       },
     },
   },
