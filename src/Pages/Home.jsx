@@ -142,7 +142,7 @@ const Home = (() => {
        <div className="secstion-title bg-[#fdcd0d1a] center-align mbd-50 text-center wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s">
                 <h1 className="text-xl pt-3">Gallery</h1>
               </div>
-       <section className="bg-[#fdcd0d1a] overflow-hidden">
+       {/* <section className="bg-[#fdcd0d1a] overflow-hidden">
        <div className="section-title  center-align mb-50 text-center wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s">
                 
               </div>
@@ -153,20 +153,20 @@ const Home = (() => {
                       <img src={el?.img} className="rounded-xl rotate-6 pb-5 pt-[10rem] hover:rotate-0 duration-500 hover:-translate-y-12 h-full w-64 object-cover hover:scale-150 transform origin-bottom" alt="#_" /> 
                   )
                 })}
-    </div> {/* Starts links to tutorial */}
+    </div> 
     <div className="pointer-events-none fixed inset-x-0 bottom-0 sm:flex sm:justify-center sm:px-6 sm:pb-5 lg:px-8">
       <div className="pointer-events-auto flex w-full max-w-md divide-x divide-neutral-200 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
       </div>
-    </div> {/* Ends links to tutorial */}
+    </div> 
   </div>
   
-</section>
-<div className="bg-[#fdcd0d1a] h-32">
+</section> */}
+{/* <div className="bg-[#fdcd0d1a] h-32">
 
 <div className="second-header-btn float-right mr-10">
                           <Link to={"/gallery"} className="btn">View More</Link>
                         </div>
-</div>
+</div> */}
           {/* blog-area-end */}
           {/* brand-area */}
 
