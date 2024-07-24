@@ -31,7 +31,7 @@ const ContactUs=()=>{
   </section>
   {/* breadcrumb-area-end */}
   {/* contact-area */}
-  <section id="contact" className="contact-area after-none contact-bg pt-120 pb-120 p-relative fix">
+  {/* <section id="contact" className="contact-area after-none contact-bg pt-120 pb-120 p-relative fix">
     <div className="container">
       <div className="row">
         <div className="col-lg-12 order-2">
@@ -76,7 +76,7 @@ const ContactUs=()=>{
         </div>
       </div>
     </div>
-  </section>
+  </section> */}
   {/* contact-area-end */}
   {/* services-area */}          
   <section id="services" className="services-area contact-info pt-120 pb-120 fix">
