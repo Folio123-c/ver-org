@@ -4,6 +4,9 @@ const Partners=()=>{
     return(
         <>
         <div className="brand-area  bg-[#f7f7ff6c] ">
+        <div className="secstion-title  center-align mbd-50 text-center wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s">
+                <h1 className="text-xl pt-3 uppercase font-semibold">Our Parteners</h1>
+              </div>
           <div className="container pt-12">
             <div className="row brand-active flex justify-center items-center">
               <div className="col-xl-2 h-64">

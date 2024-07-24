@@ -139,9 +139,9 @@ const Home = (() => {
           {/* video-area-end */}
 
        <ProjectCategory setDetailedData={setDetailedData} setProjectsDetails={setProjectsDetails} data={detailedData}/>
-       <div className="secstion-title bg-[#fdcd0d1a] center-align mbd-50 text-center wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s">
+       {/* <div className="secstion-title bg-[#fdcd0d1a] center-align mbd-50 text-center wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s">
                 <h1 className="text-xl pt-3">Gallery</h1>
-              </div>
+              </div> */}
        {/* <section className="bg-[#fdcd0d1a] overflow-hidden">
        <div className="section-title  center-align mb-50 text-center wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s">
                 
