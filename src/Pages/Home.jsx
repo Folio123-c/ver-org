@@ -83,9 +83,9 @@ const Home = (() => {
                 <div className="col-lg-6 col-md-12">
                   <div className="section-title text-center mb-20 wow fadeInDown  animated" data-aos="fade-in">
                     <h5>What we Did</h5>
-                    <h2>
-                      Vie et Environment &amp; forest management
-                    </h2>
+                    <h4 className="text-3xl">
+                      Vie et Environment Rwanda &amp; environment sustainable
+                    </h4>
                   </div>
                 </div>
               </div>

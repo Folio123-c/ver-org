@@ -10,11 +10,12 @@ const AboutSection=()=>{
                     <div className="about-title second-title pb-25">
                       <h5>About Us</h5>
                       <h2>We  Provide Environmental Solution</h2>
-                    </div><p>Many of the problems are associated with poor management of environment and natural resources. The DEMP II was thus, inspired by the fact that local communities are more motivated to protect and sustainably use natural resources if they are directly involved in the planning and decision making process.
+                    </div><p>We are committed to sustainably improve the well-being of poor people of Rwanda by using community-based approach to find solutions of food insecurity to livelihoods and environmental challenges.
 
                     </p>
-                    <p>For local governments, strengthening environmental management capacity is important since environmental sustainability contributes to widening and increasing local revenue base, a key aspect of Rwanda’s decentralization process. The ecosystem restoration and protection is one of key priority for Environment and Natural Resources Sector in order to achieve EDPRS objective and Vision 2020 in Rwanda.
-                      It is in that regard DEMP II in collaboration with Rwamagana district implemented a project to rehabilitate Mugesera lakeshores </p>
+                    <p>We recognize the relationships between communities and their environment and how environmental issues affect human health. We support environmentally friendly practices that promote proper use of natural resources, agricultural inputs and safe use of equipment and tools.</p>
+                    <p>We work with financial service providers and their clients to develop green business models and create financial products that promote environmentally sustainable business practices</p>
+                    <p>We recognize the gendered impacts of climate change and assist women and other marginalized individuals in adapting through specific strategies and activities. We also harness their specialized knowledge and leadership to address climate-related risks.</p>
                   </div>
                 </div>
                 <div className="col-lg-7 col-md-12 col-sm-12">

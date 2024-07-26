@@ -12,6 +12,7 @@ import { createDirectus, readItems, rest } from "@directus/sdk";
 import { Base_url } from "../Services/Constants";
 import MissionAndVision from "../components/Mission&Vision";
 import img from "../assets/images/IMG-20221114-WA0005.jpg"
+import AboutSection from "../components/AboutSection";
 const AboutUs = () => {
   const [testimonialData, setTestimonialData] = useState(null);
   const [isFetcing, setIsFetching] = useState(false);
@@ -77,63 +78,10 @@ const AboutUs = () => {
         </section>
         {/* breadcrumb-area-end */}
         {/* about-area */}
-        <section className="about-area about-p pt-120 pb-120 p-relative fix">
-          <div className="container">
-            <div className="row justify-content-center align-items-center">
-              <div className="col-lg-5 col-md-12 col-sm-12">
-                <div
-                  className="about-content s-about-content  wow fadeInRight  animated"
-                  data-animation="fadeInRight"
-                  data-delay=".4s"
-                >
-                  <div className="about-title second-title pb-25">
-                    <h5>About Us</h5>
-                    <h2>We Provide Environmental Solution</h2>
-                  </div>
-                  <p>
-                    Many of the problems are associated with poor management of
-                    environment and natural resources. The DEMP II was thus,
-                    inspired by the fact that local communities are more
-                    motivated to protect and sustainably use natural resources
-                    if they are directly involved in the planning and decision
-                    making process.
-                  </p>
-                  <p>
-                    For local governments, strengthening environmental
-                    management capacity is important since environmental
-                    sustainability contributes to widening and increasing local
-                    revenue base, a key aspect of Rwanda’s decentralization
-                    process. The ecosystem restoration and protection is one of
-                    key priority for Environment and Natural Resources Sector in
-                    order to achieve EDPRS objective and Vision 2020 in Rwanda.
-                    It is in that regard DEMP II in collaboration with Rwamagana
-                    district implemented a project to rehabilitate Mugesera
-                    lakeshores{" "}
-                  </p>
-                </div>
-              </div>
-              <div className="col-lg-7 col-md-12 col-sm-12">
-                <div
-                  className="s-about-img p-relative  wow fadeInLeft animated"
-                  data-animation="fadeInLeft"
-                  data-delay=".4s"
-                >
-                  <img
-                    src={aboutImage}
-                    alt="img"
-                    className="w-full"
-                  />
-                  {/* <div className="about-text second-about">
-                    <img
-                      src="../assets/img/features/about-play.png"
-                      alt="img"
-                    />
-                  </div> */}
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <div className="mt-5 py-4">
+
+        <AboutSection/>
+        </div>
   
         {/* about-area-end */}
         {/* testimonial-area */}
@@ -144,7 +92,7 @@ const AboutUs = () => {
             backgroundRepeat: "no-repeat",
           }}
         >
-          <div className="container">
+          <div className="container wow fadeInRight  animated"  data-animation="fadeInRight" data-delay=".4s">
             <div className="row">
               <div className="col-lg-12">
                 <div
@@ -156,12 +104,12 @@ const AboutUs = () => {
                 </div>
               </div>
               <div className="col-lg-12">
-                <div className="testimonial-active grid grid-cols-4 gap-5">
+                <div className="testimonial-active grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5">
                   {testimonialData &&
                     testimonialData?.slice(0,3)?.map((el) => {
                       return (
                         <>
-                          <div className="single-testimonial">
+                          <div className="single-testimonial border-0.5 rounded-md shadow-md p-2">
                             <div className="testi-author">
                               <div className="w-full h-32 ">
                                 <img
@@ -375,7 +323,10 @@ const AboutUs = () => {
         </section> */}
         {/* team-area-end */}
         {/* steps-area */}
+        <div className="mt-5">
+
         <OurSteps />
+        </div>
         {/* steps-area-end */}
         {/* brand-area */}
         <MissionAndVision/>

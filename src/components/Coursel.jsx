@@ -16,17 +16,17 @@ function Coursel() {
             <div className="col-lg-7 col-md-8">
               <div className="slider-content s-slider-content pt-[14rem]">
                 <h5 data-animation="fadeInUp" data-delay=".4s">
-                  Vie &amp; et Environment Rwanda
+                Health & Environment  
                 </h5>
                 <h2 data-animation="fadeInUp" data-delay=".4s">
-                  We strengthen community adaptability and{" "}
-                  <span>resilience.</span>
+                We recognize the relationships between communities and  {" "}
+                  <span>their environment .</span>
                 </h2>
                 {/* <div className="slider-btn mb-200">
                   <a href="#" className="btn mr-15" data-animation="fadeInUp" data-delay=".4s">Donate </a>
                 </div> */}
                 <div className="second-header-btn flex">
-                  <Link className="btn">
+                  <Link  to={"/donate"} className="btn">
                     Donate <i className="fal fa-wallet " />
                   </Link>
                 </div>
@@ -42,13 +42,13 @@ function Coursel() {
             <div className="col-lg-7 col-md-8">
               <div className="slider-content s-slider-content pt-[14rem]">
                 <h5 data-animation="fadeInUp bg-black/20 " data-delay=".4s">
-                  During this project &amp;{" "}
+                Gender & Climate Action 
                 </h5>
                 <h2 data-animation="fadeInUp bg-black/20 " data-delay=".4s">
-                  115,935 seedlings have been <span> produced</span>
+                We recognize the gendered impacts of <span>  climate change</span>
                 </h2>
                 <div className="second-header-btn flex">
-                  <Link className="btn">
+                  <Link to={"/donate"} className="btn">
                     Donate <i className="fal fa-wallet " />
                   </Link>
                 </div>
@@ -64,14 +64,14 @@ function Coursel() {
             <div className="col-lg-7 col-md-8">
               <div className="slider-content s-slider-content pt-[14rem]">
                 <h5 data-animation="fadeInUp" data-delay=".4s">
-                  Seedling produced &amp;{" "}
+                Climate Change Adaptation 
                 </h5>
                 <h2 data-animation="fadeInUp" data-delay=".4s">
                   {" "}
-                  both Muyira site <span> Cyabatsinga</span>
+                  We assist all types and sizes of vulnerable populations in  <span> adapting to a changing climate</span>
                 </h2>
                 <div className="second-header-btn flex">
-                  <Link className="btn">
+                  <Link to={"/donate"} className="btn">
                     Donate <i className="fal fa-wallet " />
                   </Link>
                 </div>

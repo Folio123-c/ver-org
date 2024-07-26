@@ -88,15 +88,15 @@ export  const ProjectsErosionData = [
 
 export const Services=[
     {
-        "name": "Train and Sensitize",
+        "name": "Environment climate change",
     },
     {
-        "name": "Plant agro forestry trees",
+        "name": "Social and economic development",
     },
     {
         "name": "Environment protection ",
     },
     {
-        "name": "Empowerment of farmers",
+        "name": "Promoting sustainable practices: ",
     },
 ]

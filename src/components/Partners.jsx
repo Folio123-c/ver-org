@@ -8,7 +8,7 @@ const Partners=()=>{
                 <h1 className="text-xl pt-3 uppercase font-semibold">Our Parteners</h1>
               </div>
           <div className="container pt-12">
-            <div className="row brand-active flex justify-center items-center">
+            <div className="row brand-active grid  sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 justify-center items-center">
               <div className="col-xl-2 h-64">
                 <div className="single-brand h-32 w-32">
                   <img src="https://www.rgb.rw/index.php?eID=dumpFile&t=f&f=16642&token=e32867996bd480c554695c358ee3d605df6e381d" alt="img" className="h-full w-full"/>

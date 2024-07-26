@@ -95,7 +95,7 @@ const Gallery = () => {
             </Card>
           </div>
         ) : (
-          <div className="flex flex-wrap mx-auto md:flex-nowrap  m-auto w-[90%] py-4">
+          <div className="grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 mx-auto gap-5  m-auto w-[90%] py-4">
             {displayedPhotos?.map((el) => {
               return (
                 <div className="relative flex flex-col items-start m-1 transition  ease-in-out duration-500  delay-150 transform  md:w-96 md:-ml-32 md:hover:-translate-x-32 md:hover:-translate-y-8 shrink-0 ">
