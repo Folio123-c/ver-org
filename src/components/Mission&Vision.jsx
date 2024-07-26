@@ -21,7 +21,7 @@ const MissionAndVision = () => {
         {missionAndVisisonInfo?.map((el) => {
           return (
             <>
-              <div class="group h-full sm:h-[23rem] relative cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mxs-auto sm:max-w-sm sm:rounded-lg sm:px-10">
+              <div class="group h-full sm:!h-[23rem] relative cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mxs-auto sm:max-w-sm sm:rounded-lg sm:px-10">
                 <span class="absolute top-10 z-0 h-20 w-20 rounded-full bg-[#8fb569] transition-all duration-300 group-hover:scale-[10]"></span>
                 <div class="relative z-10 mx-auto max-w-md">
                   <span class="grid h-20 w-20 place-items-center rounded-full bg-[#8fb569] transition-all duration-300 group-hover:bg-[#8fb569]">
@@ -38,7 +38,7 @@ const MissionAndVision = () => {
           );
         })}
 
-        <div class="group relative h-full sm:h-[23rem]cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mxs-auto sm:max-w-sm sm:rounded-lg sm:px-10">
+        <div class="group relative h-full sm:!h-[23rem] cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mxs-auto sm:max-w-sm sm:rounded-lg sm:px-10">
           <span class="absolute top-10 z-0 h-20 w-20 rounded-full bg-[#8fb569] transition-all duration-300 group-hover:scale-[10]"></span>
           <div class="relative z-10 mx-auto max-w-md">
             <span class="grid h-20 w-20 place-items-center rounded-full bg-[#8fb569] transition-all duration-300 group-hover:bg-[#8fb569]">
@@ -63,7 +63,7 @@ const MissionAndVision = () => {
             </div>
           </div>
         </div>
-        <div class="group h-full sm:h-[23rem] relative cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mxs-auto sm:max-w-sm sm:rounded-lg sm:px-10">
+        <div class="group h-full sm:!h-[23rem] relative cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mxs-auto sm:max-w-sm sm:rounded-lg sm:px-10">
           <span class="absolute top-10 z-0 h-20 w-20 rounded-full bg-[#8fb569] transition-all duration-300 group-hover:scale-[10]"></span>
           <div class="relative z-10 mx-auto max-w-md">
             <span class="grid h-20 w-20 place-items-center rounded-full bg-[#8fb569] transition-all duration-300 group-hover:bg-[#8fb569]">

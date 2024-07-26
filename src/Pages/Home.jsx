@@ -18,6 +18,7 @@ import Partners from "../components/Partners"
 import ProjectDetail from "./ProjectDetails"
 import { IoArrowBackCircleSharp } from "react-icons/io5"
 import img from "../assets/images/IMG-20221114-WA0005.jpg"
+import MissionAndVision from "../components/Mission&Vision"
 // ..
 AOS.init();
 const Home = (() => {
@@ -170,7 +171,7 @@ const Home = (() => {
 </div> */}
           {/* blog-area-end */}
           {/* brand-area */}
-
+          <MissionAndVision/>
           <Partners/>
 
           {/* brand-area-end */}
