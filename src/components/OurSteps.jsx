@@ -37,7 +37,7 @@ const OurSteps=()=>{
                           </div>
                           <div className="text">
                             <h3>destruction of agricultural land and deforestation</h3>
-                            <p>Deforestation contributes to climate change by increasing carbon dioxide levels in the atmosphere, as trees that once absorbed CO2 are removed. It also results in habitat destruction, threatening the survival of numerous plant and animal species. </p>
+                            <p>Ending deforestation is the best chance we have to stabilize our climate, save wildlife species and protect our well-being. Protecting the forest is our mutual responsibility, no matter how far away we live from the nearest one. Adopt some of these strategies to help prevent the loss of more trees </p>
                           </div>
                         </div>
                       </li>

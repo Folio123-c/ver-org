@@ -754,7 +754,7 @@ background: #141b22;
 padding-top: 15px;
 color: #fff;
 position: relative;
-z-index: 1;
+z-index: 999;
 }
 .second-header::before {
 content: "";

@@ -10,6 +10,8 @@ import { Carousel } from 'antd';
 import "./style.css"
 import { createDirectus, readItems, rest } from "@directus/sdk";
 import { Base_url } from "../Services/Constants";
+import MissionAndVision from "../components/Mission&Vision";
+import img from "../assets/images/IMG-20221114-WA0005.jpg"
 const AboutUs = () => {
   const [testimonialData, setTestimonialData] = useState(null);
   const [isFetcing, setIsFetching] = useState(false);
@@ -156,7 +158,7 @@ const AboutUs = () => {
               <div className="col-lg-12">
                 <div className="testimonial-active grid grid-cols-4 gap-5">
                   {testimonialData &&
-                    testimonialData?.map((el) => {
+                    testimonialData?.slice(0,3)?.map((el) => {
                       return (
                         <>
                           <div className="single-testimonial">
@@ -254,9 +256,7 @@ const AboutUs = () => {
               <div className="col-12">
                 <div
                   className="s-video-wrap"
-                  style={{
-                    backgroundImage: "url(../assets/img/bg/video-img2.png)",
-                  }}
+                  style={{ backgroundImage: `url(${img})` }}
                 >
                   <div className="s-video-content text-center">
                     <h6>
@@ -378,6 +378,7 @@ const AboutUs = () => {
         <OurSteps />
         {/* steps-area-end */}
         {/* brand-area */}
+        <MissionAndVision/>
         <Partners />
         {/* brand-area-end */}
         <Footer />
