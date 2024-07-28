@@ -18,10 +18,10 @@ function Coursel() {
                 <h5 data-animation="fadeInUp" data-delay=".4s">
                 Health & Environment  
                 </h5>
-                <h2 data-animation="fadeInUp" data-delay=".4s">
+                <h3 data-animation="fadeInUp" className="text-[3.5rem] text-white" data-delay=".4s">
                 We recognize the relationships between communities and  {" "}
                   <span>their environment .</span>
-                </h2>
+                </h3>
                 {/* <div className="slider-btn mb-200">
                   <a href="#" className="btn mr-15" data-animation="fadeInUp" data-delay=".4s">Donate </a>
                 </div> */}
@@ -44,9 +44,9 @@ function Coursel() {
                 <h5 data-animation="fadeInUp bg-black/20 " data-delay=".4s">
                 Gender & Climate Action 
                 </h5>
-                <h2 data-animation="fadeInUp bg-black/20 " data-delay=".4s">
+                <h3 className="text-[3.5rem] text-white" data-animation="fadeInUp bg-black/20 " data-delay=".4s">
                 We recognize the gendered impacts of <span>  climate change</span>
-                </h2>
+                </h3>
                 <div className="second-header-btn flex">
                   <Link to={"/donate"} className="btn">
                     Donate <i className="fal fa-wallet " />
@@ -66,10 +66,10 @@ function Coursel() {
                 <h5 data-animation="fadeInUp" data-delay=".4s">
                 Climate Change Adaptation 
                 </h5>
-                <h2 data-animation="fadeInUp" data-delay=".4s">
+                <h3 className="text-[3.5rem] text-white" data-animation="fadeInUp" data-delay=".4s">
                   {" "}
                   We assist all types and sizes of vulnerable populations in  <span> adapting to a changing climate</span>
-                </h2>
+                </h3>
                 <div className="second-header-btn flex">
                   <Link to={"/donate"} className="btn">
                     Donate <i className="fal fa-wallet " />

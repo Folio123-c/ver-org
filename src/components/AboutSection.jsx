@@ -1,5 +1,6 @@
 
 import aboutImage from "../assets/images/IMG-20221114-WA0005.jpg"
+import experienceImage from "../assets/images/experiences year.png"
 const AboutSection=()=>{
     return(
         <>
@@ -19,11 +20,9 @@ const AboutSection=()=>{
                   </div>
                 </div>
                 <div className="col-lg-7 col-md-12 col-sm-12">
-                  <div className="s-about-img p-relative shadow-md wow fadeInLeft animated p-2 rounded-md" data-animation="fadeInLeft" data-delay=".4s">
+                  <div className="s-about-img p-relative relative shadow-md wow fadeInLeft animated p-2 rounded-md" data-animation="fadeInLeft" data-delay=".4s">
                     <img src={aboutImage} alt="img" className="w-full rounded-md"/>
-                    {/* <div className="about-text second-about">
-                      <img src="../assets/img/features/about-play.png" alt="img" />
-                    </div> */}
+                    <img src={experienceImage} alt="img" className=" hidden lg:block lg:w-[9.8rem] lg:h-[9rem] rounded-md absolute top-[35%] -right-10"/>
                   </div>
                 </div>
               </div>

@@ -93,10 +93,13 @@ const Home = (() => {
               <Activities />
             </div>
           </section>
+          <MissionAndVision/>
           {/* Activities Section End */}
 
           {/* steps-area */}
+          <div className="mt-5">
           <OurSteps />
+          </div>
           {/* steps-area-end */}
 
           {/* newslater-area */}
@@ -171,7 +174,6 @@ const Home = (() => {
 </div> */}
           {/* blog-area-end */}
           {/* brand-area */}
-          <MissionAndVision/>
           <Partners/>
 
           {/* brand-area-end */}
