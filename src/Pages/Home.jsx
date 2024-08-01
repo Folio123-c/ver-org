@@ -75,6 +75,7 @@ const Home = (() => {
           <section className="about-area about-p pt-120 pb-120 p-relative fix " data-aos="fade-in"> 
             <AboutSection />
           </section>
+          <MissionAndVision/>
           {/* about-area-end */}
 
           {/* Activities Section*/}
@@ -93,7 +94,6 @@ const Home = (() => {
               <Activities />
             </div>
           </section>
-          <MissionAndVision/>
           {/* Activities Section End */}
 
           {/* steps-area */}

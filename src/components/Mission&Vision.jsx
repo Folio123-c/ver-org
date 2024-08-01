@@ -1,6 +1,6 @@
 import { FiActivity } from "react-icons/fi";
 import { RiProgress6Fill } from "react-icons/ri";
-import { TbDeviceVisionPro } from "react-icons/tb";
+import { TbDeviceVisionPro, TbDirectionArrows } from "react-icons/tb";
 
 const MissionAndVision = () => {
   const missionAndVisisonInfo = [
@@ -8,11 +8,13 @@ const MissionAndVision = () => {
       title: "Vision",
       details:
         "Working towards prosperous communities that conserve their environment",
+        image:<TbDeviceVisionPro color="white" size={42}/>
     },
     {
       title: "Mission",
       details:
         "We are committed to sustainably improve the well-being of poor people in Rwanda by using community-based approach tofinding solutions to food insecurity, livelihoods and environmental challenges",
+        image:<TbDirectionArrows color="white" size={42}/>
     },
   ];
   return (
@@ -26,7 +28,7 @@ const MissionAndVision = () => {
                 <div class="relative z-10 mx-auto max-w-md">
                   <span class="grid h-20 w-20 place-items-center rounded-full bg-[#8fb569] transition-all duration-300 group-hover:bg-[#8fb569]">
                    
-                    <TbDeviceVisionPro color="white" size={42}/>
+                    {el?.image}
                   <h1 className="text-center text-lg absolute right-4 sm:right-[7rem] font-bold">{el?.title}</h1>
                   </span>
                   <div class="space-y-6 pt-2 text-base leading-7 text-gray-600 transition-all duration-300 ">

@@ -95,17 +95,17 @@ const Gallery = () => {
             </Card>
           </div>
         ) : (
-          <div className="grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 mx-auto gap-5  m-auto w-[90%] py-4">
+          <div className="grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 mx-auto gap-1h  m-auto w-[90%] py-4">
             {displayedPhotos?.map((el) => {
               return (
-                <div className="relative flex flex-col items-start m-1 transition  ease-in-out duration-500  delay-150 transform  md:w-96 md:-ml-32 md:hover:-translate-x-32 md:hover:-translate-y-8 shrink-0 ">
+                <div className="relative flex flex-col items-start m-1 transition  ease-in-out duration-500  delay-200 transform  md:w-96 md:-ml-32 md:hover:-translate-x-32 md:hover:-translate-y-8 shrink-0 ">
                   <article
-                    className="mx-auto  w-[24rem] rounded-3xl overflow-hidden  h-[40rem] bg-cover ring-2 ring-inset ring-white/50 bg-center relative   transform duration-500   group"
+                    className="mx-auto  w-[20rem] rounded-3xl overflow-hidden  h-[20rem] bg-cover ring-2 ring-inset ring-white/50 bg-center relative   transform duration-500   group"
                     style={{
                       backgroundImage: `url(${Base_url}/assets/${el?.image?.id})`,
                     }}
                   >
-                    <div className=" relative h-full  group-hover:bg-opacity-0  flex flex-wrap flex-col pt-[30rem]  transform duration-500">
+                    <div className=" relative h-full  group-hover:bg-opacity-0  flex flex-wrap flex-col pt-[13rem]  transform duration-500">
                       <div className=" bg-black/20 group-hover:bg-black/30 duration-500 group-hover:backdrop-blur p-8 lg:p-10 h-full justify-end flex flex-col ">
                         <p className=" text-white text-sm 2xl:text-lg group-hover:opacity-10 transform duration-500 capitalize">
                           {" "}
