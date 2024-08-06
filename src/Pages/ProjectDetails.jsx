@@ -2,7 +2,7 @@ import DOMPurify from "dompurify";
 import Footer from "../components/Footer"
 import Header from "../components/Header"
 import { Base_url } from "../Services/Constants"
-
+import "./style.css"
 const ProjectDetail = ((props) => {
   const createMarkup = (html) => {
     return { __html: DOMPurify.sanitize(html) };
@@ -20,12 +20,12 @@ const ProjectDetail = ((props) => {
               {/* Two Column */}
               <div className="two-column">
                 <div className="row">
-                  <div className="text-column col-xl-6 col-lg-12 col-md-12">
-                    <img src={`${Base_url}/assets/${props?.data?.image?.id}`} alt />
+                  <div className="w-full h-[50vh]">
+                    <img src={`${Base_url}/assets/${props?.data?.image?.id}`} alt className="w-full h-full rounded-none"/>
                   </div>
                 </div>
               </div>
-              <div dangerouslySetInnerHTML={createMarkup(props?.data?.descriptions)}/>
+              <div dangerouslySetInnerHTML={createMarkup(props?.data?.descriptions)} className="wysiwyg-content rounded-none bg-transparent"/>
               {/* <p className="pt-5"> {props?.data?.descriptions} </p> */}
             </div>
           </div>

@@ -1,6 +1,7 @@
 import Footer from "../components/Footer"
 import Header from "../components/Header"
 import { Base_url } from "../Services/Constants"
+import "./style.css"
 import DOMPurify from 'dompurify';
 const NewsDetails = ((props) => {
   const createMarkup = (html) => {
@@ -17,14 +18,14 @@ const NewsDetails = ((props) => {
             <div className="content-box">
               <h2 className="capitalize"> {props?.data?.title} </h2>
               <div className="two-column">
-                <div className="row">
-                  <div className="text-column col-xl-6 col-lg-12 col-md-12">
-                    <img src={`${Base_url}/assets/${props?.data?.image?.id}`} alt />
+                {/* <div className="row"> */}
+                  <div className="w-full h-[50vh]">
+                    <img src={`${Base_url}/assets/${props?.data?.image?.id}`} alt  className="w-full h-full rounded-none"/>
                   </div>
-                </div>
+                {/* </div> */}
               </div>
               {/* <p className="pt-5"> {props?.data?.descriptions} </p> */}
-              <div dangerouslySetInnerHTML={createMarkup(props?.data?.descriptions)} className="mt-5"/>
+              <div dangerouslySetInnerHTML={createMarkup(props?.data?.descriptions)} className="mt-5 bg-transparent wysiwyg-content"/>
             </div>
           </div>
         </div>
