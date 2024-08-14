@@ -179,7 +179,7 @@ console.log("result",result)
                             onClick={() => handleShowProjectDetails(el)}
                           >
                             <div
-                              className="single-post2 hover-zoomin mb-30 wow fadeInUp animated"
+                              className="single-post2 hover-zoomin shadow-md mb-30 wow fadeInUp animated"
                               data-animation="fadeInUp"
                               data-delay=".4s"
                             >
@@ -190,7 +190,7 @@ console.log("result",result)
                                   className="h-full w-full"
                                 />
                               </div>
-                              <div className="blog-content2 w-full">
+                              <div className="blog-content2 w-full bg-dred-300 h-64 relative">
                                 <div className="date-home">
                                   <i className="fal fa-calendar-alt" />{" "}
                                   {el?.date_created?.substring(0, 10)}
@@ -215,9 +215,9 @@ console.log("result",result)
                                     ? `${el.title.substring(0, 20)}...`
                                     : el.title}
                                 </h4>
-                                {el?.descriptions?.length > 100? <div dangerouslySetInnerHTML={createMarkup(el?.descriptions.substring(0, 100))}/>:<div dangerouslySetInnerHTML={createMarkup(el?.descriptions)}/>}
+                                {el?.descriptions?.length > 70? <div dangerouslySetInnerHTML={createMarkup(el?.descriptions.substring(0, 70))}/>:<div dangerouslySetInnerHTML={createMarkup(el?.descriptions)}/>}
                                 
-                                <div className="blog-btn">
+                                <div className="blog-btn absolute bottom-4">
                                   <a href="#">
                                     Read More{" "}
                                     <i className="fal fa-long-arrow-right" />

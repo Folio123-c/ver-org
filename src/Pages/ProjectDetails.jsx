@@ -30,12 +30,12 @@ const ProjectDetail = ((props) => {
         </div>
       </div>
     </div> */}
-<div className="max-w-screen-xl mx-auto">
-  <main className="mts-10">
-    <div className="mb-4 md:mb-0 w-full max-w-screen-xmd mxx-auto relative" style={{height: '24em'}}>
+<div className="max-w-screen-lg mx-auto">
+  <main className="mts-10 text-black">
+    <div className="mb-4 md:mb-0 w-full max-w-screen-xmd mxx-auto relative " style={{height: '24em'}}>
       <div className="absolute left-0 bottom-0 w-full h-full z-10" style={{backgroundImage: `${Base_url}/assets/${props?.data?.image?.id}`}} />
       <img src={`${Base_url}/assets/${props?.data?.image?.id}`} className="absolute left-0 top-0 w-full h-full z-0 object-cover" />
-      <div className="p-4 absolute bottom-0 left-0 z-20">
+      <div className="p-2 absolute bottom-0 left-0 z-20 bg-[#00000065] rounded-md w-[95%] ">
         <h2 className="text-4xl font-semibold text-gray-100 leading-tight">
         {props?.data?.title}
         </h2>
@@ -49,7 +49,7 @@ const ProjectDetail = ((props) => {
         </div>
       </div>
     </div>
-    <div dangerouslySetInnerHTML={createMarkup(props?.data?.descriptions)} className="wysiwyg-content rounded-none bg-transparent"/>
+    <div dangerouslySetInnerHTML={createMarkup(props?.data?.descriptions)} className="wysiwyg-content !text-black rounded-none bg-transparent"/>
   </main>
 </div>
 

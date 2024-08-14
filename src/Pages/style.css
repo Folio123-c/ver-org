@@ -32,6 +32,9 @@
       transform: translate(-100%);
     }
   }
+  blockquote p {
+    color: black !important;
+  }
   .wysiwyg-content img {
     width: 100%;
     height: 40vh;
@@ -40,5 +43,6 @@
   }
   blockquote, .pages-content blockquote, .comment-list blockquote {
     background-color: transparent;
+    color: black !important;
   }
   
