@@ -10,7 +10,7 @@ const NewsDetails = ((props) => {
   console.log("propssss data",props?.data)
     return (
         <>
-         <main>
+         <main className="bg-[#00000002] pt-3 rounded-md">
   {/* <div className="about-area5 about-p p-relative">
     <div className="container pt-120 pb-90">
         <div className="col-lg-12 order-1">
