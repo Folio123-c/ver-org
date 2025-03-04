@@ -26,9 +26,9 @@ function Coursel() {
                   <a href="#" className="btn mr-15" data-animation="fadeInUp" data-delay=".4s">Donate </a>
                 </div> */}
                 <div className="second-header-btn flex">
-                  <Link  to={"/donate"} className="btn">
+                  <a href="https://donorbox.org/let-s-save-lives-and-environment-again" className="btn" target="_blank" rel="noopener noreferrer">
                     Donate <i className="fal fa-wallet " />
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
@@ -48,9 +48,9 @@ function Coursel() {
                 We recognize the gendered impacts of <span>  climate change</span>
                 </h3>
                 <div className="second-header-btn flex">
-                  <Link to={"/donate"} className="btn">
+                  <a href="https://donorbox.org/let-s-save-lives-and-environment-again" className="btn" target="_blank" rel="noopener noreferrer">
                     Donate <i className="fal fa-wallet " />
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
@@ -71,9 +71,9 @@ function Coursel() {
                   We assist all types and sizes of vulnerable populations in  <span> adapting to a changing climate</span>
                 </h3>
                 <div className="second-header-btn flex">
-                  <Link to={"/donate"} className="btn">
+                  <a href="https://donorbox.org/let-s-save-lives-and-environment-again" className="btn" target="_blank" rel="noopener noreferrer">
                     Donate <i className="fal fa-wallet " />
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
