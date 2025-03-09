@@ -146,56 +146,56 @@ const AboutUs = () => {
         </section>
         {/* testimonial-area-end */}
         {/* newslater-area */}
-        <section
-          className="newslater-area pt-120 pb-200"
-          style={{
-            backgroundColor: "rgba(0,110,47,255)",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "contain",
-          }}
-        >
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col-xl-7 col-lg-7">
-                <div
-                  className="section-title newslater-title wow fadeInDown  animated"
-                  data-animation="fadeInDown"
-                  data-delay=".4s"
-                >
-                  <div className="text">
-                    <h5>Subscribe</h5>
-                    <h2>Join Us &amp; Get Upadate From Us</h2>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-5 col-lg-5">
-                <form
-                  name="ajax-form"
-                  id="contact-form4"
-                  action="#"
-                  method="post"
-                  className="contact-form newslater wow fadeInDown  animated"
-                  data-animation="fadeInDown"
-                  data-delay=".4s"
-                >
-                  <div className="form-group p-relative">
-                    <input
-                      className="form-control"
-                      id="email2"
-                      name="email"
-                      type="email"
-                      placeholder="Email Address..."
-                      required
-                    />
-                    <button type="submit" className="btn btn-custom" id="send2">
-                      Subscribe Now
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/*/!*<section*!/*/}
+        {/*/!*  className="newslater-area pt-120 pb-200"*!/*/}
+        {/*/!*  style={{*!/*/}
+        {/*/!*    backgroundColor: "rgba(0,110,47,255)",*!/*/}
+        {/*/!*    backgroundRepeat: "no-repeat",*!/*/}
+        {/*/!*    backgroundSize: "contain",*!/*/}
+        {/*/!*  }}*!/*/}
+        {/*/!*>*!/*/}
+        {/*  <div className="container">*/}
+        {/*    <div className="row align-items-center">*/}
+        {/*      <div className="col-xl-7 col-lg-7">*/}
+        {/*        <div*/}
+        {/*          className="section-title newslater-title wow fadeInDown  animated"*/}
+        {/*          data-animation="fadeInDown"*/}
+        {/*          data-delay=".4s"*/}
+        {/*        >*/}
+        {/*          <div className="text">*/}
+        {/*            <h5>Subscribe</h5>*/}
+        {/*            <h2>Join Us &amp; Get Upadate From Us</h2>*/}
+        {/*          </div>*/}
+        {/*        </div>*/}
+        {/*      </div>*/}
+        {/*      <div className="col-xl-5 col-lg-5">*/}
+        {/*        <form*/}
+        {/*          name="ajax-form"*/}
+        {/*          id="contact-form4"*/}
+        {/*          action="#"*/}
+        {/*          method="post"*/}
+        {/*          className="contact-form newslater wow fadeInDown  animated"*/}
+        {/*          data-animation="fadeInDown"*/}
+        {/*          data-delay=".4s"*/}
+        {/*        >*/}
+        {/*          <div className="form-group p-relative">*/}
+        {/*            <input*/}
+        {/*              className="form-control"*/}
+        {/*              id="email2"*/}
+        {/*              name="email"*/}
+        {/*              type="email"*/}
+        {/*              placeholder="Email Address..."*/}
+        {/*              required*/}
+        {/*            />*/}
+        {/*            <button type="submit" className="btn btn-custom" id="send2">*/}
+        {/*              Subscribe Now*/}
+        {/*            </button>*/}
+        {/*          </div>*/}
+        {/*        </form>*/}
+        {/*      </div>*/}
+        {/*    </div>*/}
+        {/*  </div>*/}
+        {/*</section>*/}
         {/* newslater-aread-end */}
         {/* video-area */}
         <section id="video" className="video-area p-relative">

@@ -65,7 +65,8 @@ const [openTopNav,setOpenTopNav]=useState(false)
                     <ul>
                       <li>
                         <div className="second-header-btn">
-                          <Link className="btn">+250-788-704-505</Link>
+                          <Link className="btn" to="mailto:elidad@verrwanda.org">Join Us</Link>
+                          {/*<li className="btn"><a href="mailto:elidad@verrwanda.org">Join Us</a></li>*/}
                         </div>
                       </li>
                     </ul>
